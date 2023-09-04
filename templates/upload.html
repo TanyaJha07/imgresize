@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Resizer</title>
+</head>
+<body>
+    <h1>Upload and Resize an Image</h1>
+    <form method="POST" enctype="multipart/form-data" action="/upload">
+        <input type="file" name="file">
+        <label for="width">Width (x):</label>
+        <input type="number" name="width" id="width" min="1">
+        <label for="height">Height (y):</label>
+        <input type="number" name="height" id="height" min="1">
+        <input type="submit" value="Upload and Resize">
+    </form>
+</body>
+</html>
